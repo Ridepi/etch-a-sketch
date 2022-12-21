@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sketchContainer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border: 1px solid black;
+    width: 70vh;
+    height: 70vh;
+}
+
+.pad {
+    background-color: pink;
+}
