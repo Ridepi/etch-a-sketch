@@ -4,15 +4,37 @@
     box-sizing: border-box;
 }
 
+h1 {
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 60px;
+}
+
+.tvoutside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vh;
+    height: 70vh;
+    border: 1px solid black;
+    border-radius: 5vh;
+    background-color: white;
+    margin: auto;
+}
+
 .sketchContainer {
     display: flex;
     flex-wrap: wrap;
     background-color: white;
     border: 1px solid black;
-    width: 70vh;
-    height: 70vh;
+    width: 60vh;
+    height: 60vh;
 }
 
 .pad {
-    background-color: pink;
+    background-color: black;
+}
+
+.sketch {
+    background-color: white;
 }
