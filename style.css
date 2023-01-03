@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #affaf4;
+}
 h1 {
     text-align: center;
     font-size: 70px;
@@ -14,27 +17,66 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vh;
+    gap: 3vh;
+    width: 95vh;
     height: 70vh;
-    border: 1px solid black;
+    border: 5px solid #4d2e1c;
     border-radius: 5vh;
-    background-color: white;
+    background-color:#825031;
     margin: auto;
 }
 
 .sketchContainer {
     display: flex;
     flex-wrap: wrap;
-    background-color: white;
+    background-color: #121111;
     border: 1px solid black;
     width: 60vh;
     height: 60vh;
 }
 
 .pad {
-    background-color: black;
+    background-color: #121111;
 }
 
-.sketch {
-    background-color: white;
+.controlButtonContainer {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
+
+.slider {
+    -webkit-appearance: none;
+    width: 25vh;
+    height: 20px;
+    border-radius: 10px;  
+    background: #4d2e1c;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; 
+    background: #8a0101;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #8a0101;
+    cursor: pointer;
+  }
+
+  #sizeIndicator {
+    text-align: center;
+    margin-bottom: 7px;
+  }
