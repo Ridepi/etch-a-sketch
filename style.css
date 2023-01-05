@@ -9,18 +9,18 @@ body {
 }
 h1 {
     text-align: center;
-    font-size: 70px;
-    margin-bottom: 60px;
+    font-size: 7vmin;
+    margin-bottom: 7vmin;
 }
 
 .tvoutside {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3vh;
-    width: 95vh;
-    height: 70vh;
-    border: 5px solid #4d2e1c;
+    gap: 3vmin;
+    width: 95vmin;
+    height: 70vmin;
+    border: 0.75vmin solid #4d2e1c;
     border-radius: 5vh;
     background-color:#825031;
     margin: auto;
@@ -31,8 +31,8 @@ h1 {
     flex-wrap: wrap;
     background-color: #121111;
     border: 1px solid black;
-    width: 60vh;
-    height: 60vh;
+    width: 60vmin;
+    height: 60vmin;
 }
 
 .pad {
@@ -40,7 +40,6 @@ h1 {
 }
 
 .controlButtonContainer {
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -48,35 +47,65 @@ h1 {
 
 .slider {
     appearance: none;
-    width: 25vh;
-    height: 20px;
-    border-radius: 10px;  
+    width: 25vmin;
+    height: 2vmin;
+    border-radius: 10vmin;  
     background: #4d2e1c;
     outline: none;
     opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0vmin 0.5vmin 1.4vmin;
   }
   
-  .slider::-webkit-slider-thumb {
+.slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 30px;
-    height: 30px;
+    width: 3vmin;
+    height: 3vmin;
     border-radius: 50%; 
     background: #8a0101;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0vmin 0.1vmin 1vmin;
+  }
+
+.slider::-webkit-slider-thumb:hover {
+    transform: translate(0.2vmin, -0.2vmin);
+    transition: 0.5s;
   }
   
-  .slider::-moz-range-thumb {
-    width: 30px;
-    height: 30px;
+.slider::-moz-range-thumb {
+    width: 3vmin;
+    height: 3vmin;
     border-radius: 50%;
     background: #8a0101;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+.slider::-moz-range-thumb:hover {
+    transform: translate(0.2vmin, -0.2vmin);
+    transition: 0.5s;
+}
+#sizeIndicator {
+    text-align: center;
+    margin-bottom: 1vmin;
+    font-size: 2vmin;
   }
 
-  #sizeIndicator {
-    text-align: center;
-    margin-bottom: 7px;
+  .clearBtn {
+    background-color: #825031;
+    border: 0.5vmin solid #4d2e1c;
+    width: 25vmin;
+    height: 3.5vmin;
+    border-radius: 7vmin;
+    margin-top: 3vmin;
+    font-size: 2vmin;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 4px 7px;
+  }
+
+  .clearBtn:hover {
+    background-color: #8a01014f; 
+    transition: 0.3s;
+    cursor: pointer;
+    transform: translate(0.2vmin, -0.2vmin);
   }

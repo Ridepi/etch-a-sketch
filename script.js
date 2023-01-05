@@ -14,6 +14,10 @@ slider.oninput = function() {
     output.innerHTML = `${this.value} x ${this.value}`;
 }
 
+slider.onchange = function () {
+    dimension = slider.value;
+    reload();
+}
 
 console.log(dimension);
 let container = document.querySelector(".sketchContainer");
