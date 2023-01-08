@@ -7,9 +7,10 @@
   <meta name="description" content="" />
   <link rel="stylesheet" type="text/css" href="style.css" />
   <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Modak&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Etch-a-Sketch</h1>
+  <h1>~Etch-a-Sketch~</h1>
   <div class="tvoutside">
     <div class="sketchContainer"></div>
     <div class="controlButtonContainer">
@@ -17,8 +18,15 @@
         <p id="sizeIndicator"></p>
         <input type="range" min="1" max="64" value="16" class="slider" id="sizeRange">
       </div>
+      <div class="pickerContainer">
+        <p id="chooseColorText">Choose your color:</p>
+        <input id="colorPicker" type="color" value="#8a0101"/>
+      </div>
       <button type="button" class="clearBtn">Clear</button>
     </div>
   </div>
+  <img src="img/spiral.png" class="spiral spiral1">
+  <img src="img/spiral.png" class="spiral spiral2">
+  <img src="img/spiral.png" class="spiral spiral3">
 </body>
 </html>

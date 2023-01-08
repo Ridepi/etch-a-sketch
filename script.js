@@ -1,6 +1,5 @@
 const backgroundColor = "#121111";
-
-
+let currentColor = "#8a0101"
 
 let slider = document.getElementById("sizeRange");
 let output = document.getElementById("sizeIndicator");
@@ -9,6 +8,12 @@ output.innerHTML = `${slider.value} x ${slider.value}`;
 let dimension = slider.value;
 let clearbutton = document.querySelector(".clearBtn");
 clearbutton.addEventListener("click", reload);
+
+let colorPicker = document.getElementById("colorPicker");
+colorPicker.onchange = function () {
+    currentColor = colorPicker.value;
+    reload();
+}
 
 slider.oninput = function() {
     output.innerHTML = `${this.value} x ${this.value}`;
@@ -45,7 +50,7 @@ function createSketchPad (dimension) {
 function changeColor(e) {
     if (e.type === 'mouseover' && !mouseDown) return
     if (e.type === 'mouseover' && mouseDown) {
-        e.target.style.backgroundColor = "white";
+        e.target.style.backgroundColor = currentColor;
     }
 }
 
