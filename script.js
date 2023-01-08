@@ -3,7 +3,7 @@ let currentColor = "#8a0101"
 
 let slider = document.getElementById("sizeRange");
 let output = document.getElementById("sizeIndicator");
-output.innerHTML = `${slider.value} x ${slider.value}`;
+output.innerHTML = `Size: ${slider.value} x ${slider.value}`;
 
 let dimension = slider.value;
 let clearbutton = document.querySelector(".clearBtn");
@@ -15,8 +15,13 @@ colorPicker.onchange = function () {
     reload();
 }
 
+let eraser = document.querySelector(".eraseBtn");
+eraser.addEventListener("click", function (){
+    currentColor = backgroundColor
+})
+
 slider.oninput = function() {
-    output.innerHTML = `${this.value} x ${this.value}`;
+    output.innerHTML = `Size: ${this.value} x ${this.value}`;
 }
 
 slider.onchange = function () {
@@ -24,13 +29,11 @@ slider.onchange = function () {
     reload();
 }
 
-console.log(dimension);
 let container = document.querySelector(".sketchContainer");
 
 let mouseDown = false;
 document.body.onmousedown = () => (mouseDown = true);
 document.body.onmouseup = () => (mouseDown = false);
-
 
 
 //Function creates the specified amount of divs inside the container

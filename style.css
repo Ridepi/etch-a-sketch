@@ -124,7 +124,7 @@ p {
     border: 0.5vmin solid #4d2e1c;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 4px 7px;
 }
-.clearBtn {
+button {
     background-color: #825031;
     border: 0.5vmin solid #4d2e1c;
     width: 25vmin;
@@ -136,7 +136,7 @@ p {
     font-weight: 300;
 }
 
-.clearBtn:hover {
+button:hover {
     background-color: #8a01014f; 
     transition: 0.2s;
     cursor: pointer;
